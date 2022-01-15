@@ -1,3 +1,6 @@
+#![allow(dead_code)]
+#![allow(unused_variables)]
+
 use unicode_segmentation::UnicodeSegmentation;
 use std::collections::HashMap;
 
@@ -7,7 +10,7 @@ fn main() {
 
     v.push(1);
 
-    let mut v2 = vec![1, 2, 3, 4, 5];
+    let v2 = vec![1, 2, 3, 4, 5];
     
     let third = &v[2];
     
@@ -38,8 +41,6 @@ fn main() {
         SpreadsheetCell::Int(i) => println!("{}", i),
         SpreadsheetCell::Float(f) => println!("{}", f),
         SpreadsheetCell::Text(s) => println!("{}", s),
-
-        _ => println!("unknown"),
     }
 
 

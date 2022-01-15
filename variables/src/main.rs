@@ -1,6 +1,5 @@
-// #[allow(overflowing_literals)]
-#[allow(dead_code)]
-#[allow(unused_variables)]
+#![allow(dead_code)]
+#![allow(unused_variables)]
 
 fn main() {
     let x: u32 = 5;

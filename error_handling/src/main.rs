@@ -1,3 +1,6 @@
+#![allow(dead_code)]
+#![allow(unused_variables)]
+
 use std::{fs::{File, read_to_string}, io::{ErrorKind, Error}};
 
 fn main() {
@@ -39,7 +42,7 @@ fn main() {
     // Error propagation
 
     fn read_username_from_file() -> Result<String, Error> {
-        let mut s = String::new();
+        let s = String::new();
         // File::open("hello.txt")?.read_to_string(&mut s)?;
 
          read_to_string("hello.txt")

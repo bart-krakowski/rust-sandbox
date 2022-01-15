@@ -1,3 +1,5 @@
+#![allow(unused_variables)]
+
 fn main() {
     // Ownership rules:
     // 1. Each value in Rust has a variable that’s called its owner.

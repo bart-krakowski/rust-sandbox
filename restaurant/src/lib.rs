@@ -1,5 +1,8 @@
-use rand::{Rng, CryptoRng};
-use std::io::{self, Write};
+#![allow(dead_code)]
+#![allow(unused_variables)]
+
+use rand::{Rng};
+
 // use std::io::*;
 
 mod front_of_house;
