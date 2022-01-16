@@ -8,7 +8,7 @@ impl<T> MyBox<T> {
     }
 }
 
-impl<T> Deref for MyBox {
+impl<T> Deref for MyBox<T> {
     type Target = T;
 
     fn deref(&self) -> &T {
@@ -36,12 +36,12 @@ fn main() {
     let f = MyBox::new(e);
 
     assert_eq!(5, e);
-    assert_eq!(5, *f); c
+    assert_eq!(5, *f);
 
     // Example 4
     let m = MyBox::new(String::from("Rust"));
     hello(&m);
-    
+
 }
 
 fn hello(name: &str) {
